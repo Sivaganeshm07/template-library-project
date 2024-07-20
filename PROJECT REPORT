@@ -1,0 +1,176 @@
+SYSTECKS SOLUTIONS VIRTUAL INTERNSHIP 
+
+
+
+TEMPLATE LIBRARY WEBSITE
+PROJECT
+SUBMITED
+BY 
+SIVAGANESH M
+(sivaganeshm07@gmail.com
+
+
+
+
+1.	Introduction 
+				The Template Library Website is a web application that offers a collection of templates in various formats such as PowerPoint presentations (PPT), documents (Docs), and spreadsheets (Sheets) across different domains like business, marketing, education, etc. Users can browse, search, and preview templates before downloading them. Additionally, users can upload their own templates, specifying their domain and personal details for community sharing.
+
+ 2. Objectives 
+1. Develop a user-friendly website with an intuitive interface for easy navigation and template browsing.
+2. Implement a search functionality allowing users to search for templates based on keywords, categories, and domains.
+3. Provide preview options for templates, enabling users to view a sample of the template before downloading.
+4. Include filters such as category (business, marketing, education, etc.), file format (PPT, Docs, Sheets), popularity, and upload date to facilitate efficient template searching.
+5. Create a user registration and login system to manage user accounts and personalized features.
+6. Enable users to upload their own templates, providing fields for template title, description, domain/category, file upload, and personal details.
+7. Implement security measures to protect user data and uploaded templates, ensuring a safe and secure browsing experience.
+8. Design a responsive layout to ensure compatibility across various devices and screen sizes.
+
+ 3. Project Architecture
+
+### Frontend
+- HTML: Structure of the web pages.
+- CSS: Styling of the web pages.
+- JavaScript: Dynamic functionalities.
+- Framework: Bootstrap for responsive design.
+
+
+### Backend
+- Node.js: Server-side environment.
+- Express.js: Web framework for Node.js.
+- MongoDB: Database for storing user and template data.
+- Mongoose: Object Data Modeling (ODM) library for MongoDB and Node.js.
+- JWT: JSON Web Tokens for user authentication.
+- bcrypt: Password hashing.
+
+
+
+
+
+
+
+
+
+
+
+File Structure
+template-library-project/
+│
+├── frontend/
+│   ├── index.html                # Main HTML file for the homepage
+│   ├── upload.html               # Template upload page
+│   ├── login.html                # Login page
+│   ├── register.html             # Registration page
+│   ├── css/
+│   │   └── styles.css            # Main CSS file
+│   ├── js/
+│   │   ├── scripts.js            # Main JavaScript file
+│   │   └── search.js             # Search-related JavaScript functions
+│   ├── images/
+│   │   └── logo.png              # Logo and other images
+│   └── assets/
+│       ├── fonts/                # Custom fonts (if any)
+│       └── icons/
+│
+├── backend/
+│   ├── models/
+│   │   ├── User.js                # User model
+│   │   └── Template.js            # Template model
+│   ├── routes/
+│   │   ├── auth.js                # Authentication routes
+│   │   └── templates.js           # Template management routes
+│   ├── middleware/
+│   │   └── auth.js                # Authentication middleware
+│   ├── config.js                  # Database configuration and connection
+│   ├── .env                       # Environment variables
+│   ├── app.js                     # Main application file
+│   └── uploads/                   # Directory for uploaded files
+
+
+
+
+4. Implementation
+ Frontend
+- HTML: Created pages for home, login, registration, and template upload.
+- CSS: Styled the pages to ensure a consistent look and feel.
+- JavaScript: Added functionality for form submission, template search, and user interactions.
+
+ Backend
+- User Authentication: Implemented user registration and login using JWT and bcrypt.
+- Template Management: Created API endpoints for uploading, searching, and retrieving templates.
+- Database Connection: Configured MongoDB connection using Mongoose.
+- Middleware: Added middleware for authentication and error handling.
+
+
+
+Key Features
+
+1. User Registration and Login
+   - Allows users to create accounts and log in.
+   - Secure password storage using bcrypt.
+   - JWT for session management.
+
+2. Template Upload
+   - Users can upload templates with details like title, description, category, and file.
+   - Uploaded files are stored in the `uploads` directory.
+
+3. Template Search and Filter
+   - Users can search for templates based on keywords and filters.
+   - Filters include category, file format, popularity, and upload date.
+
+4. Template Preview and Download
+   - Users can preview a sample of the template before downloading.
+   - Ensures users download the correct template.
+
+5. Testing
+- Manual Testing: Conducted extensive manual testing of the frontend and backend.
+- API Testing: Tested API endpoints using sample requests to ensure they return the correct responses.
+
+ Common Errors Encountered and Resolution
+
+1.	Registration Error:
+- Fixed an issue where the registration form was returning a `SyntaxError: Unexpected end of JSON input`.
+        - Resolved by ensuring the server returns a valid JSON response.
+
+2.	Database Insertion Error: 
+-Encountered issues while inserting documents in MongoDB.
+        - Ensured the correct structure of documents and fixed schema definitions.
+
+ 6. Deployment
+Local Deployment
+
+1. Run Backend Server:
+   cd backend
+   node app.js
+   
+
+2. Open Frontend in Browser:
+   Open `index.html` in the browser to interact with the frontend.
+
+
+
+
+
+
+
+
+GitHub Repository
+
+Github Repository Link : https://github.com/Sivaganeshm07/template-library-project.git
+
+1. Create a Repository:
+   - Created a new repository on GitHub named `template-library-project`.
+
+2. Push Code to GitHub:
+   git init
+   git add .
+   git commit -m "Initial commit"
+   git remote add origin https://github.com/Sivaganeshm07/template-library-project.git
+   git push -u origin master
+   
+
+
+7. Conclusion
+The Template Library Website project successfully implemented the desired features, providing a platform for users to upload, search, and download various templates. The project utilized modern web technologies and followed best practices for security and user experience.
+
+
+
