@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Template</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Template Library</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="upload.html">Upload Template</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="upload-form">
+            <h2>Upload a Template</h2>
+            <form id="template-upload-form" enctype="multipart/form-data">
+                <input type="text" id="title" name="title" placeholder="Template Title" required>
+                <textarea id="description" name="description" placeholder="Template Description" required></textarea>
+                <select id="category" name="category" required>
+                    <option value="">Select Category</option>
+                    <option value="business">Business</option>
+                    <option value="marketing">Marketing</option>
+                    <option value="education">Education</option>
+                </select>
+                <select id="format" name="format" required>
+                    <option value="">Select Format</option>
+                    <option value="ppt">PPT</option>
+                    <option value="docs">Docs</option>
+                    <option value="sheets">Sheets</option>
+                </select>
+                <input type="file" id="templateFile" name="templateFile" required>
+                <button type="submit">Upload</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Template Library</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/upload.js"></script>
+</body>
+</html>
