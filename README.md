@@ -12,7 +12,11 @@ This project is a Template Library Website that offers a collection of templates
 - **Responsive Design:** Compatible across various devices and screen sizes.
 - **Security:** Protect user data and uploaded templates with robust security measures.
 
+  ***SAMPLE WEBSITE VIDEOS AND IMAGES***
   
+https://github.com/user-attachments/assets/dc88d61e-c3ea-47f7-8f77-1811d29871c1
+
+
 
   ![Screenshot (121)](https://github.com/user-attachments/assets/3f526569-1595-4b0a-8032-27c6b55677b4)
   
