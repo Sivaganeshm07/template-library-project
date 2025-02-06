@@ -80,8 +80,7 @@ template-library-project/
 │   │   └── templates.js           # Template management routes
 │   ├── middleware/
 │   │   └── auth.js                # Authentication middleware
-│   ├── config.js                  # Database configuration and connection
-│   ├── .env                       # Environment variables
+│   ├── config.js                  # Database configuration and connection                     
 │   ├── app.js                     # Main application file
 │   └── uploads/                   # Directory for uploaded files
 
